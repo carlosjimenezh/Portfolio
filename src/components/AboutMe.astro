@@ -1,0 +1,22 @@
+---
+const identify = {
+    firstName: 'Carlos',
+    lastName: 'Jimenez',
+    location: 'Cd. Guzmán Jal.',
+    occupation: 'Full Stack Dev',
+    yearsOfExperience: 2,
+    skills: [
+        'HTML',
+        'CSS',
+        'JS',
+        'PHP',
+        'REACTJS',
+    ]
+}
+
+const {firstName, lastName, location, occupation, yearsOfExperience, skills} = identify;
+---
+
+
+<h1>Hi, I'm {firstName}</h1>
+<p>I'm a + {`${yearsOfExperience} years of experience as ${occupation}.`}</p>
