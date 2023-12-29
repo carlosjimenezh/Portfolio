@@ -1,4 +1,9 @@
 ---
+import SocialCard from './SocialCard.astro';
+import LinkedinIcon from '../icons/LinkedinIcon.astro';
+import GithubIcon from '../icons/GithubIcon.astro';
+import '../styles/about.css'
+import GmailIcon from '../icons/GmailIcon.astro';
 const identify = {
     firstName: 'Carlos',
     lastName: 'Jimenez',
@@ -17,6 +22,28 @@ const identify = {
 const {firstName, lastName, location, occupation, yearsOfExperience, skills} = identify;
 ---
 
-
-<h1>Hi, I'm {firstName}</h1>
-<p>I'm a + {`${yearsOfExperience} years of experience as ${occupation}.`}</p>
+<section id="about-me">
+    <div class="box-content container">
+        <div class="box">
+            <h1>Hi, I'm {firstName}</h1>
+            <p>Web Developer with over {`${yearsOfExperience} years of experience as ${occupation}.`} Specializing in the development and maintenance of web solutions for businesses.</p>
+            <SocialCard platform="Linkedin" href="https://www.linkedin.com/in/carlos-jimenez-899b4b1aa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFBrz1inlSzW1vaOqJr4TNA%3D%3D">
+                <LinkedinIcon class="social-icon"/>
+            </SocialCard>
+            <SocialCard platform="Github" href="https://github.com/carlosjimenezh">
+                <GithubIcon class="social-icon" data-icon="github" />
+            </SocialCard>
+            <SocialCard platform="Mail" href="mailto:carlosejimenezh95@gmail.com">
+                <GmailIcon class="social-icon" />
+            </SocialCard>
+        </div>
+        <div class="box photo center">
+            <img src="../../public/me.png" alt="">
+        </div>
+    </div>
+    <!-- <ul>
+        {skills.map( skill => {
+            return <li>{skill}</li>        
+        })}
+    </ul> -->
+</section>

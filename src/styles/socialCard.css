@@ -1,0 +1,15 @@
+.social-card {
+    border-radius: 5px;
+    color: white;
+    padding: 8px 30px;
+    background-color: #aaa;
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+}
+
+.social-card .social-icon {
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
