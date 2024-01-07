@@ -1,11 +1,11 @@
-h1 {
+#about-me h1 {
     font-size: 3em;
 }
-p {
+#about-me p {
     font-size: 1.5em;
     margin: 40px 0 30px;
 }
-.photo img {
+#about-me .photo img {
     border-radius: 50%;
     width: 300px;
 }

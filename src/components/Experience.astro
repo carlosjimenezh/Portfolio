@@ -1,5 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+import '../styles/experience.css'
+const EXPERIENCE = [
+    {
+        date: "July 2021 - Actually",
+        title: "Full stack at Crateronfire",
+        description: "Developing the design and functionality of the website based on a given design, ensuring a smooth user interface (UI) experience. Creating and maintaining APIs to handle application data. Fetching data from external data APIs. Database creation and management.",
+    },
+    {
+        date: "January 2021",
+        title: "Internship at Software Allies",
+        description: "decription2",
+    },
+    {
+        date: "2020",
+        title: "Universidad de Guadalajara",
+        description: "Telematic engenier",
+    }
+]
+---
+
 <section id="experience">
     <div class="container">
         <h2>Experience</h2>
+        <ol>
+            {EXPERIENCE.map( item => (
+                <ExperienceItem {...item}/>
+            ))}
+        </ol>
     </div>
 </section>
