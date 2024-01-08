@@ -11,6 +11,7 @@
     "lint": "standard"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.0.16",
     "astro": "^4.0.8"
   },
   "devDependencies": {

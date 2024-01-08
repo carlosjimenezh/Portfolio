@@ -1,11 +1,19 @@
 #about-me h1 {
-    font-size: 3em;
+    font-size: 5em;
 }
 #about-me p {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 40px 0 30px;
 }
 #about-me .photo img {
     border-radius: 50%;
     width: 300px;
+}
+#about-me .icons-wrapper {
+    display: flex;
+    align-items: center;
+}
+#about-me .icons-wrapper a {
+    text-decoration: underline;
+    font-weight: bold;
 }

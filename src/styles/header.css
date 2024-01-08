@@ -5,6 +5,6 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: 30px;
+    justify-content: center;
+    gap: 50px;
 }

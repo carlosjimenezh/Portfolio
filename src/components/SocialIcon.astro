@@ -1,0 +1,8 @@
+---
+import '../styles/socialIcon.css'  
+const {href} = Astro.props
+---
+
+<a href={href} target="_blank" class="social-icon">
+    <slot />
+</a>
