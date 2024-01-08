@@ -15,6 +15,9 @@ a {
 section {
     padding: 100px 0;
 }
+h2 {
+    text-align: center;
+}
 .container {
     padding: 15px;
     max-width: 1300px;
@@ -28,6 +31,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    width: 100%;
 }
 
 .expanded {

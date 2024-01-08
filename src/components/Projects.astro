@@ -1,5 +1,50 @@
+---
+import Card from "./Card.astro";
+import '../styles/projects.css'
+const projects = [
+    {
+        href: 'https://pme.com.mx/',
+        title: 'Productos Metálicos Exclusivos',
+        body: 'Productos Metálicos Exclusivos',
+        imgSrc: '../../public/projects/pme.png',
+    },
+    {
+        href: 'https://encuentrabodega.mx/',
+        title: 'Encuentrabodega.mx',
+        body: '',
+        imgSrc: '../../public/projects/encuentrabodega.png',
+    },
+    {
+        href: 'https://vimarcontractors.com.mx/',
+        title: 'vimar constractors',
+        body: 'Productos Metálicos Exclusivos',
+        imgSrc: '../../public/projects/vimar.png',
+    },
+    {
+        href: 'https://road-fleet.com/',
+        title: 'Roadfleet California Transport',
+        body: 'Productos Metálicos Exclusivos',
+        imgSrc: '../../public/projects/roadfleet.png',
+    },
+    {
+        href: 'https://dimsconstruye.mx/',
+        title: 'Dimscontruye.mx',
+        body: 'Productos Metálicos Exclusivos',
+        imgSrc: '../../public/projects/dims.png',
+    },
+    {
+        href: 'https://opus30.mx/',
+        title: 'Opus 30 constructor',
+        body: 'Productos Metálicos Exclusivos',
+        imgSrc: '../../public/projects/opus.png',
+    },
+]
+---
 <section id="projects">
     <div class="container">
         <h2>Projects</h2>
+        {projects.map( ({href, title, body, imgSrc}) => (
+            <Card href={href} title={title} body={body} imgSrc={imgSrc}></Card>
+        ))}
     </div>
 </section>
