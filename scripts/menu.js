@@ -1,4 +1,3 @@
-console.log('hola mundo');
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.nav-items')
 
