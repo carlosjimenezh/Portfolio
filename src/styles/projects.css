@@ -1,3 +1,36 @@
 #projects .link-card .box img {
     width: 100%;
 }
+
+#projects .box-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+#projects .box-content .box {
+    width: 100%;
+}
+
+#projects h3 {
+    margin: 50px 0 20px;
+}
+
+#projects .img-background {
+    background-position: top;
+}
+
+#projects .link-card strong {
+    display: block;
+    margin: 10px 0;
+}
+
+#projects .link-card {
+    color: #333;
+}
+
+#projects .link-card ul {
+    list-style: none;
+}
+
+#projects .link-card {
+    font-size: 14px;
+}

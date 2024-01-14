@@ -12,8 +12,8 @@
 
 <style>
     .hamburger {
-        padding-right: 20px;
         cursor: pointer;
+        display: none;
     }
 
     .hamburger .line {
@@ -21,7 +21,14 @@
         width: 40px;
         height: 5px;
         margin-bottom: 10px;
-        background-color: #ff9776;
+        background-color: rgba(0, 163, 255);
+    }
+    
+    @media only screen and (max-width:600px){
+        .hamburger {
+            display: unset;
+        }
+       
     }
     
 </style>

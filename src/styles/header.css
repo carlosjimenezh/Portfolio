@@ -1,10 +1,59 @@
 header {
-    padding: 10px 0;
+    background-color: aliceblue;
+    background-color: transparent;
 }
-
 header nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+}
+
+header nav a {
+    color: #555;
+    font-weight: bold;
+}
+
+header.scrolled {
+    background-color: rgba(0, 163, 255);
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px;
+}
+
+header.scrolled nav a {
+    color: white;
+    transition: .5s;
+}
+
+header.scrolled #themeToggle {
+    filter: invert(1);
+}
+header.scrolled .hamburger .line {
+    background-color: white!important;
+}
+
+
+@media only screen and (max-width:600px){
+    header nav.nav-items {
+        display: none;
+    }
+    header .container {
+        justify-content: end;
+        align-items: initial;
+    }
+    header nav.nav-items.expanded {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+    }
+    header.expanded {
+        background-color: rgba(0, 163, 255);
+    }
+    header.expanded nav a {
+        color: white;
+    }
+    header.expanded .hamburger .line {
+        background-color: white!important;
+    }
 }

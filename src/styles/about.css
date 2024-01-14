@@ -7,13 +7,14 @@
 }
 #about-me .photo img {
     border-radius: 50%;
-    width: 300px;
+    width: max(300px, 75%)
 }
-#about-me .icons-wrapper {
-    display: flex;
-    align-items: center;
-}
-#about-me .icons-wrapper a {
-    text-decoration: underline;
-    font-weight: bold;
+
+@media only screen and (max-width:847px){
+    #about-me h1 {
+        font-size: 3.5em;
+    }
+    #about-me p {
+        font-size: 1.5em;
+    }
 }

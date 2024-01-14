@@ -5,37 +5,69 @@ const projects = [
     {
         href: 'https://pme.com.mx/',
         title: 'Productos Metálicos Exclusivos',
-        body: 'Productos Metálicos Exclusivos',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development.',
+            'Retrieve elements from the database for display on the page.',
+            'Create a contact form to collect partnership inquiries.',
+            'Develop an admin page for content management.',
+            'Establish a database to store dinamic content.',
+        ],
         imgSrc: '../../public/projects/pme.png',
     },
     {
         href: 'https://encuentrabodega.mx/',
         title: 'Encuentrabodega.mx',
-        body: '',
+        description: '',
+        requirements: [
+            'Front-end development.',
+            'Retrieve elements from the database for display on the page.',
+            'Implement element filtering and searching functionality.',
+            'Create a contact form to collect partnership inquiries.',
+            'Develop an admin page for element management.',
+            'Establish a database for storing elements.',
+        ],
         imgSrc: '../../public/projects/encuentrabodega.png',
+    },
+    {
+        href: 'https://dimsconstruye.mx/',
+        title: 'Dimscontruye.mx',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development',
+            'Retrieve elements from the database for display on the page.',
+            'Create a contact form to collect partnership inquiries.',
+        ],
+        imgSrc: '../../public/projects/dims.png',
     },
     {
         href: 'https://vimarcontractors.com.mx/',
         title: 'vimar constractors',
-        body: 'Productos Metálicos Exclusivos',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development.',
+            'Create a contact form to collect partnership inquiries.',
+        ],
         imgSrc: '../../public/projects/vimar.png',
     },
     {
         href: 'https://road-fleet.com/',
         title: 'Roadfleet California Transport',
-        body: 'Productos Metálicos Exclusivos',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development.',
+            'Create a contact form to collect partnership inquiries.',
+        ],
         imgSrc: '../../public/projects/roadfleet.png',
-    },
-    {
-        href: 'https://dimsconstruye.mx/',
-        title: 'Dimscontruye.mx',
-        body: 'Productos Metálicos Exclusivos',
-        imgSrc: '../../public/projects/dims.png',
     },
     {
         href: 'https://opus30.mx/',
         title: 'Opus 30 constructor',
-        body: 'Productos Metálicos Exclusivos',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development.',
+            'Create a contact form to collect partnership inquiries.',
+        ],
         imgSrc: '../../public/projects/opus.png',
     },
 ]
@@ -43,8 +75,10 @@ const projects = [
 <section id="projects">
     <div class="container">
         <h2>Projects</h2>
-        {projects.map( ({href, title, body, imgSrc}) => (
-            <Card href={href} title={title} body={body} imgSrc={imgSrc}></Card>
-        ))}
+        <div class="box-content">
+            {projects.map( ({href, title, description, requirements, imgSrc}) => (
+                <Card href={href} title={title} body={description} imgSrc={imgSrc} requirements={requirements}></Card>
+            ))}
+        </div>
     </div>
 </section>

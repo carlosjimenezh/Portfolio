@@ -1,14 +1,33 @@
 ---
 import Hamburger from "../components/Hamburger.astro";
 import '../styles/header.css'
+import CodeIcon from "../icons/CodeIcon.astro";
+import ThemeIcon from "../components/ThemeIcon.astro"
 ---
-<header>
-    <nav class="nav-items container" style="max-width: 100%;">
-        <a href="#top">About me</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header id="header">
+    <!-- <CodeIcon class="social-icon"></CodeIcon> -->
+    <div class="items-wrapper container">
+        <!-- <ThemeIcon></ThemeIcon> -->
+        <nav class="nav-items">
+            <a href="#top">About me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#top">Contact</a>
+        </nav>
+        <Hamburger></Hamburger>
+    </div>
     <!-- <Hamburger /> -->
 </header>
+
+<script>
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('#header')
+    if (window.scrollY > 100) {
+        header.classList.add('scrolled')
+    } else {
+        header.classList.remove('scrolled')
+    }
+})
+
+</script>
 
