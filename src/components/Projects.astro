@@ -2,6 +2,20 @@
 import Card from "./Card.astro";
 import '../styles/projects.css'
 const projects = [
+    {  
+        href: 'https://www.abarrotesabeja.com/',
+        title: 'Abarrotes abeja',
+        description: 'Productos Metálicos Exclusivos',
+        requirements: [
+            'Front-end development.',
+            'Retrieve elements from the database for display on the page.',
+            'Create a contact form to collect partnership inquiries.',
+            'Develop an admin page for content management.',
+            'Establish a database to store dinamic content.',
+            'Create api.',
+        ],
+        imgSrc: '/projects/abeja.jpg',
+    },
     {
         href: 'https://pme.com.mx/',
         title: 'Productos Metálicos Exclusivos',
@@ -59,17 +73,7 @@ const projects = [
             'Create a contact form to collect partnership inquiries.',
         ],
         imgSrc: '/projects/roadfleet.jpg',
-    },
-    {
-        href: 'https://opus30.mx/',
-        title: 'Opus 30 constructor',
-        description: 'Productos Metálicos Exclusivos',
-        requirements: [
-            'Front-end development.',
-            'Create a contact form to collect partnership inquiries.',
-        ],
-        imgSrc: '/projects/opus.jpg',
-    },
+    }
 ]
 ---
 <section id="projects">
